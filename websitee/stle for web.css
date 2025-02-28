@@ -1,0 +1,264 @@
+header {
+    background-image: url('C:\Users\De Vera\Desktop\codes\websitee\images\logo.PNG'); /* Path to your image */
+    background-size: cover; /* Scales image to fit */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    height: 250px; /* Adjust height as needed */
+    display: flex; /* Allows centering of content */
+    align-items: center; /* Vertically centers text */
+    justify-content: center; /* Horizontally centers text */
+    color: white; /* Makes text readable */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds contrast */
+    transition: filter 0.3s ease-in-out; /* Smooth effect */
+}
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== HEADER STYLING ===== */
+header {
+    background-image: url('try.png'); /* Replace with your header image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 20px;
+}
+h1{
+    color: aliceblue;
+}
+
+/* Dark overlay for better text visibility */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logo h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+}
+
+/* ===== NAVIGATION MENU ===== */
+nav {
+    z-index: 2;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 76px;
+background: linear-gradient(145deg, #2c5683, #25486e);
+box-shadow:  15px 15px 16px #102031,
+             -15px -15px 16px #4280c3;
+}
+
+nav a {
+    color: rgb(255, 251, 251);
+    text-decoration:dotted;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    
+}
+nav a:hover{
+  color: #333;
+}
+h1{
+    font-family: 'poppins';
+    color: rgb(248, 252, 252);
+}
+/* ===== HERO SECTION ===== */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+.hero img {
+    border-radius: 10px;
+    margin: 15px 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* ===== CONTENT SECTIONS ===== */
+.content {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 15px 0;
+    float: left;
+}
+.content p{
+    position: center;
+}
+.
+
+/* ===== PLACES GRID LAYOUT ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 2px;
+    padding: 20px;
+    justify-content;
+    height: fit-content;
+}
+body{
+    height: fit-content;
+    color: #f9f9f9;
+    background-image: url('try.png');
+}
+.card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.card .info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+.card .layer{
+    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 75%;
+    opacity: 0;
+    transition: 0.3s;
+}   
+
+.card .info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-size: 1rem;
+        width: 100%;}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+.info p{
+    font-size: 14px;
+    margin-top: 3px;
+}
+.info button{
+    background: #4280c3;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+body{
+    background: #0a0a61;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content
+}
+.card:hover,
+.card:hover img,
+.card:hover layer{
+    transform: scale(1.1);
+}
+.card:hover> .layer{
+    opacity: 1;
+}
+.card:hover > .card:not(:hover){
+    filter:blur(5px);
+}
+
+/* ===== FOOTER STYLING ===== */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    height: fit-content;
+}
+
+footer h2 {
+    font-size: 1.8rem;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+footer a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
